@@ -8,3 +8,9 @@ data.raw.recipe["se-core-fragment-uranium-ore"].results = {
 	{"uranium-ore", settings.startup["immow-uranium-ore"].value},
 	{"stone", 1}
 }
+
+for _, recipe in pairs(data.raw.recipe["se-core-fragment-omni"].results) do
+	if recipe.name == "se-pyroflux" then
+		recipe.amount = settings.startup["immow-se-pyroflux"].value
+	end
+end

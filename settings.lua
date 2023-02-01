@@ -22,5 +22,13 @@ data:extend({
         minimum_value = 1,
         maximum_value = 100,
         default_value = 1
+    },
+    {
+        type = "int-setting",
+        name = "immow-se-pyroflux",
+        setting_type = "startup",
+        minimum_value = 1,
+        maximum_value = 100,
+        default_value = 4
     }
 })
